@@ -1,5 +1,4 @@
 import Layout from "../Components/Layout";
-import Login from "../pages/Login";
 import Registration from "../Pages/Registration";
 import Cart from "../Pages/Cart";
 import Products from "../Components/Products";
@@ -10,6 +9,7 @@ import ProtectedRoute from "../Components/ProtectedRoute";
 import ProtectedAuthRoute from "../Components/ProtectedAuthRoute";
 import NotFound from "../Pages/NotFound";
 import { createBrowserRouter } from "react-router-dom";
+import Login from "../pages/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         path: "login",
         element: (
           <ProtectedAuthRoute>
-            <Login />
+            <Login/>
           </ProtectedAuthRoute>
         ),
       },

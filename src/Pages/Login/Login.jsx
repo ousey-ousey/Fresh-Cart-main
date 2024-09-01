@@ -10,7 +10,7 @@ export default function Login() {
   const [isLodaing, setisLodaing] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
-  const { userToken, setUserToken } = useContext(AuthContext);
+  const {  setUserToken } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const validationSchema = Yup.object({
