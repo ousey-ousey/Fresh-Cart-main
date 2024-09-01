@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate, Link } from "react-router-dom";
 import { useContext } from "react";
-import { AuthContext } from "../../Contexts/AuthContext";
+import { AuthContext } from "../Contexts/AuthContext";
 
 export default function Login() {
   const [isLodaing, setisLodaing] = useState(false);

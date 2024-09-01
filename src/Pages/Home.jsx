@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Product from "../../Components/Product";
-import LoadingScreen from "../../Components/LoadingScreen";
+import Product from "../Components/Product";
+import LoadingScreen from "../Components/LoadingScreen";
 
 export default function Home() {
   const [products, setProducts] = useState([]);

@@ -1,13 +1,13 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import RatingStars from "../../Components/RatingStars";
-import LoadingScreen from "../../Components/LoadingScreen";
-import ProductImageSlider from "../../Components/ProductImageSlider";
-import RelatedProducts from "../../Components/RelatedProducts";
+import RatingStars from "../Components/RatingStars";
+import LoadingScreen from "../Components/LoadingScreen";
+import ProductImageSlider from "../Components/ProductImageSlider";
+import RelatedProducts from "../Components/RelatedProducts";
 
-import { AuthContext } from "../../Contexts/AuthContext";
-import addProductToCart from "../../cartService";
+import { AuthContext } from "../Contexts/AuthContext";
+import addProductToCart from "../cartService";
 
 export default function ProductDetails() {
   const [product, setProduct] = useState(null);

@@ -1,15 +1,15 @@
 import Layout from "../Components/Layout";
-import Registration from "../Pages/Registration";
-import Cart from "../Pages/Cart";
 import Products from "../Components/Products";
-import Categories from "../Pages/Categories";
-import Home from "../pages/Home";
 import ProductDetails from "../Pages/ProductDetails";
 import ProtectedRoute from "../Components/ProtectedRoute";
 import ProtectedAuthRoute from "../Components/ProtectedAuthRoute";
-import NotFound from "../Pages/NotFound";
 import { createBrowserRouter } from "react-router-dom";
-import Login from "../pages/Login/Login";
+import Home from "../Pages/Home";
+import Registration from "../Pages/Registration";
+import Login from "../Pages/Login";
+import Cart from "../Pages/Cart";
+import Categories from "../Pages/Categories";
+import NotFound from "../Pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         path: "login",
         element: (
           <ProtectedAuthRoute>
-            <Login/>
+            <Login />
           </ProtectedAuthRoute>
         ),
       },

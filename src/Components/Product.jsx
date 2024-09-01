@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import RatingStars from "../RatingStars";
-import { AuthContext } from "../../Contexts/AuthContext";
-import addProductToCart from "../../cartService";
+import RatingStars from "./RatingStars";
+import { AuthContext } from "../Contexts/AuthContext";
+import addProductToCart from "../cartService";
 
 
 export default function Product({ product }) {
